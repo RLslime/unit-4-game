@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Lucky Crystals</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+
+            padding: 10px;
+        }
+        </style>
+</head>
+
+<body>
+  <div class="center">
+    <div class="header">
+		<h1>Lucky Crystals! </h1>
+	</div>
+	<div class="instructions">
+		<h3>It's Your Lucky Day!</h3>
+		</br>
+		<ol>
+			<li>You will be given a random number at the start of the game.<span>"Your Lucky Number"</span></li>
+			<li>There are four ancient crystals below.</li>
+			<ul>
+				<li id="blue">Blue</li>
+				<li id="green">Green</li>
+				<li id="red">Red</li>
+				<li id="yellow">Yellow</li>
+			</ul>
+			<li>Each of these rare crystals have a secret value assigned to them.</li>
+			<li>Click on a crystal to increase your total score.</li>
+			<li>If you can add up to your lucky number, you win!</li>
+			<li>If you exceed the value of your lucky number, you bust!</li>
+            <li>Great luck is said to find anyone who amasses a lot of wins.</li>
+            <li><span>Remember!</span> values are randomized for each game!</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Your Lucky Number:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Busts: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
+		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+    </div>
+</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
